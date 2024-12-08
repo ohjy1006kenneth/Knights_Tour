@@ -1,0 +1,137 @@
+###################################
+# Read in the verilog files first #
+###################################
+read_file -format sverilog { KnightsTour.sv }
+read_file -format sverilog {cmd_proc.sv}
+read_file -format sverilog {reset_synch.sv}
+read_file -format sverilog {inert_intf.sv}
+read_file -format sverilog { TourLogic.sv }
+read_file -format sverilog { TourCmd.sv }
+read_file -format sverilog { sponge.sv }
+read_file -format sverilog { UART_wrapper.sv }
+read_file -format sverilog { PID.sv }
+read_file -format sverilog { MtrDrv.sv }
+read_file -format sverilog {inertial_integrator.sv }
+read_file -format sverilog { SPI_mnrch.sv }
+read_file -format sverilog {UART.v }
+read_file -format sverilog { UART_tx.sv }
+read_file -format sverilog { UART_rx.sv }
+read_file -format sverilog { PWM11.sv }
+
+# Set current design to top level #
+###################################
+set current_design KnightsTour
+link
+
+##############################
+# Constrain and assign clock #
+##############################
+#############################
+# 50 MHz clock 2 ns period #
+#############################
+create_clock -name "clk" -period 3 -waveform {0 1} {clk}
+set_dont_touch_network [find port clk]
+
+# These are false paths
+# Destination flop is same as source
+# Clk skew cannot happen within the same flop
+set_false_path -from [get_cell iMTR/ldrive/cnt_reg*]
+set_false_path -from [get_cell iMTR/rdrive/cnt_reg*]
+set_false_path -from [get_cell iNEMO/spi/bit_cntr_reg*]
+set_false_path -from [get_cell iNEMO/timer_reg*]
+set_false_path -from [get_cell iWRAP/iUart/iTX/baud_cnt_reg*]
+set_false_path -from [get_cell iWRAP/iUart/iRX/bit_cnt_reg*]
+set_false_path -from [get_cell iCNTRL/integrator_reg*]
+set_false_path -from [get_cell ISPNG/duration_counter_reg*]
+set_false_path -from [get_cell iCMD/frwrd_reg*]
+set_false_path -from [get_cell iWRAP/iUart/iRX/rdy_reg*]
+set_false_path -from [get_cell iWRAP/iUart/iTX/bit_cnt_reg*]
+set_false_path -from [get_cell iCMD/cntrIR_cnt_reg*]
+set_false_path -from [get_cell iNEMO/iINT/smpl_cntr_reg*]
+set_false_path -from [get_cell iNEMO/iINT/yaw_int_reg*]
+set_false_path -from [get_cell iNEMO/spi/SCLK_div_reg*]
+set_false_path -from [get_cell iTC/mv_indx_reg*]
+set_false_path -from [get_cell iTL/board_reg*]
+set_false_path -from [get_cell iWRAP/iUart/iRX/baud_cnt_reg*]
+set_false_path -from [get_cell iNEMO/spi/shft_reg_reg*]
+set_false_path -from [get_cell iCNTRL/ff2_reg*]
+set_false_path -from [get_cell iTL/last_move_reg*]
+set_false_path -from [get_cell iCMD/fanfare_reg*]
+set_false_path -from [get_cell ISPNG/freq_counter_reg*]
+set_false_path -from [get_cell ISPNG/state_reg*]
+set_false_path -from [get_cell iWRAP/iUart/iTX/tx_shft_reg_reg*]
+set_false_path -from [get_cell iNEMO/iINT/yaw_scaled_reg*]
+set_false_path -from [get_cell iCMD/state_reg*]
+set_false_path -from [get_cell ISPNG/piezo_out_reg*]
+set_false_path -from [get_cell iNEMO/spi/SS_n_reg*]
+set_false_path -from [get_cell iCMD/desired_heading_reg*]
+set_false_path -from [get_cell iTL/done_reg*]
+
+set_fix_hold [find net clk]
+
+# These are pipeline flops
+# Realistically, these should be placed near each other.
+# Honestly don't know why we have to fix hold times here: the clock tree
+# doesn't exist so there's no real way to know clock skew
+#set_false_path -from [get_cell iRST/flop1_reg*]
+#set_false_path -from [get_cell iWRAP/iUart/iRX/sig_FF1_reg*]
+#set_false_path -from [get_cell iCNTRL/frwrd_ze_ff_reg*]
+#set_false_path -from [get_cell iNEMO/INT_ff1_reg*]
+#set_false_path -from [get_cell iNEMO/yawH_reg*]
+#set_false_path -from [get_cell iNEMO/yawL_reg*]
+#set_false_path -from [get_cell iNEMO/iINT/vld_ff2_reg*]
+#set_false_path -from [get_cell iNEMO/iINT/vld_ff1_reg*]
+#set_false_path -from [get_cell iWRAP/iUart/iRX/rx_shft_reg_reg*]
+#set_false_path -from [get_cell iWRAP/FF_sig_reg*]
+#set_false_path -from [get_cell iCNTRL/ff3_reg*]
+#set_false_path -from [get_cell iWRAP/iUart/iRX/sig_FF2_reg*]
+#set_false_path -from [get_cell iNEMO/iINT/yaw_comp_reg*]
+#set_false_path -from [get_cell iNEMO/iINT/yaw_off_reg*]
+
+##############################################
+# Constrain input timings and drive strength #
+##############################################
+set prim_inputs [remove_from_collection [all_inputs] [find port clk]]
+set_input_delay -clock clk 0.4 $prim_inputs
+set_driving_cell -lib_cell NAND2X2_LVT -library saed32lvt_tt0p85v25c $prim_inputs
+set_dont_touch_network [find port rst_n]
+set_clock_uncertainty 0.15 [find net clk]
+
+#####################################
+# Constrain output timings and load #
+#####################################
+set_output_delay -clock clk 0.4 [all_outputs]
+set_load 0.1 [all_outputs]
+
+####################################
+# Set wireload and transition time #
+####################################
+set_wire_load_model -name 16000 -library saed32lvt_tt0p85v2c
+set_max_transition 0.15 [current_design]
+
+######################
+# Compile the design #
+######################
+compile
+
+################################################
+# Flatten the design, so there is no hierarchy #
+################################################
+ungroup -all -flatten
+
+##################
+# Second compile #
+##################
+compile -area_effort high
+
+############################################
+# Produce min, max reports and area report #
+###########################################
+report_timing -delay min > KnightsTour_Delay_Min.txt
+report_timing -delay max > KnightsTour_Delay_Max.txt
+report_area > KnightsTour_Area.txt
+
+###########################################
+# Write out resulting synthesized netlist #
+###########################################
+write -format verilog -output KnightsTour.vg
