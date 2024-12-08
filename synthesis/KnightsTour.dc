@@ -27,7 +27,7 @@ link
 # Constrain and assign clock #
 ##############################
 #############################
-# 50 MHz clock 2 ns period #
+# 333 MHz clock 3 ns period #
 #############################
 create_clock -name "clk" -period 3 -waveform {0 1} {clk}
 set_dont_touch_network [find port clk]
