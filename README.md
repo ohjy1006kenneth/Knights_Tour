@@ -1,7 +1,7 @@
 # Knight's Tour
 
 
-A Knight's tour problem is a sequence of moves of a knight on a 5x5 chessboard such that the knight visits very square exactly once. 
+A Knight's tour problem is a sequence of moves of a knight on a 5x5 chessboard such that the knight visits every square exactly once. 
 
 ![A screenshot of a computer Description
 automatically generated](./media/KnightsTour.png)
