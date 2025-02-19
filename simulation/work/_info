@@ -1,0 +1,656 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/juyoungoh
+vcmd_proc
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1733714641
+!i10b 1
+!s100 WWKdDo39IL5cA=2@jAkAj2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IFYYJ?WPV5f7_KH>fTj@oB0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 d/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/simulation
+w1733711149
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/cmd_proc.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/cmd_proc.sv
+!i122 58
+L0 7 225
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1733714641.000000
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/cmd_proc.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/cmd_proc.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vinert_intf
+R0
+R1
+!i10b 1
+!s100 N>EBdTQhLVKil3SnWFzno1
+R2
+IAmY756Z9z;3`a:`?]fjOC3
+R3
+S1
+R4
+Z9 w1733697473
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/inert_intf.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/inert_intf.sv
+!i122 59
+L0 7 179
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/inert_intf.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/inert_intf.sv|
+!i113 1
+R7
+R8
+vinertial_integrator
+R0
+Z10 !s110 1733714642
+!i10b 1
+!s100 EKB7oNKD40]U9]>GEWcMB0
+R2
+IDlLWON4>:0I_@UKHX]jlb2
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/inertial_integrator.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/inertial_integrator.sv
+!i122 60
+L0 1 204
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/inertial_integrator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/inertial_integrator.sv|
+!i113 1
+R7
+R8
+vinverse_PWM11e
+R0
+R10
+!i10b 1
+!s100 WT3o>WI6k:<fAE=<=<^c10
+R2
+I2fcS8I60N8=<;S?f7mjCO1
+R3
+S1
+R4
+R9
+Z11 8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/KnightPhysics.sv
+Z12 F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/KnightPhysics.sv
+!i122 62
+L0 262 49
+R5
+r1
+!s85 0
+31
+Z13 !s108 1733714642.000000
+Z14 !s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/KnightPhysics.sv|
+Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/KnightPhysics.sv|
+!i113 1
+R7
+R8
+ninverse_@p@w@m11e
+vIR_intf
+R0
+R10
+!i10b 1
+!s100 d;L^HH]ULa@;XbI3N=TVG2
+R2
+I5o=4c^5?maGIfYL99:ERj2
+R3
+S1
+R4
+R9
+Z16 8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/IR_intf.sv
+Z17 F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/IR_intf.sv
+!i122 61
+L0 1 120
+R5
+r1
+!s85 0
+31
+R13
+Z18 !s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/IR_intf.sv|
+Z19 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/IR_intf.sv|
+!i113 1
+R7
+R8
+n@i@r_intf
+vKnightPhysics
+R0
+R10
+!i10b 1
+!s100 :6T4J0b@_UN`PaS7OH^bU0
+R2
+I?I4QOFe2T^7ZoLP_=gNa=3
+R3
+S1
+R4
+R9
+R11
+R12
+!i122 62
+L0 1 257
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R7
+R8
+n@knight@physics
+vKnightsTour
+R0
+R10
+!i10b 1
+!s100 >_nSeco7Ph^GZe[4^e;Ho2
+R2
+I7kPGV9TiRD@OzAO@;fenC2
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/KnightsTour.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/KnightsTour.sv
+!i122 63
+L0 1 118
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/KnightsTour.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/KnightsTour.sv|
+!i113 1
+R7
+R8
+n@knights@tour
+vMtrDrv
+R0
+R10
+!i10b 1
+!s100 gB2Xei1NY:iUWWcS[f32n2
+R2
+IMdAUZB@Hh600ADJ`L4UCE1
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/MtrDrv.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/MtrDrv.sv
+!i122 64
+L0 2 30
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/MtrDrv.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/MtrDrv.sv|
+!i113 1
+R7
+R8
+n@mtr@drv
+vPB_release
+R0
+R10
+!i10b 1
+!s100 N8czLXg?1c8f;[5nhQUV02
+R2
+IHU8?FLaanKZPa:OiON1nd0
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PB_release.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PB_release.sv
+!i122 65
+L0 1 31
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PB_release.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PB_release.sv|
+!i113 1
+R7
+R8
+n@p@b_release
+vPID
+R0
+R10
+!i10b 1
+!s100 cKF_b2akF2aM7UnmiInQM3
+R2
+I@3S;Ckmid^8ZTROBE<:130
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PID.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PID.sv
+!i122 66
+L0 2 152
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PID.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PID.sv|
+!i113 1
+R7
+R8
+n@p@i@d
+vPWM11
+!s105 PWM11_sv_unit
+DXx4 work 13 PWM11_sv_unit 0 22 mz5a@SB1F`XdTg3Ti]P]A1
+R0
+R10
+!i10b 1
+!s100 H18HRWeZKba3CTXlnM3b22
+R2
+ImAmCEV1j0VchU3;h[cLFk3
+R3
+S1
+R4
+R9
+Z20 8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PWM11.sv
+Z21 F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PWM11.sv
+!i122 67
+L0 2 34
+R5
+r1
+!s85 0
+31
+R13
+Z22 !s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PWM11.sv|
+Z23 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/PWM11.sv|
+!i113 1
+R7
+R8
+n@p@w@m11
+XPWM11_sv_unit
+R0
+R10
+Vmz5a@SB1F`XdTg3Ti]P]A1
+r1
+!s85 0
+!i10b 1
+!s100 ]aa^``^^3@6;?BZ2GNW5N2
+Imz5a@SB1F`XdTg3Ti]P]A1
+!i103 1
+S1
+R4
+R9
+R20
+R21
+!i122 67
+L0 35 0
+R5
+31
+R13
+R22
+R23
+!i113 1
+R7
+R8
+n@p@w@m11_sv_unit
+vPWM3
+R0
+R10
+!i10b 1
+!s100 ln<lRe`j[nzR5f2KO=z7Y3
+R2
+IDYgcZhIFCLoORdCZRf@?J1
+R3
+S1
+R4
+R9
+R16
+R17
+!i122 61
+L0 126 36
+R5
+r1
+!s85 0
+31
+R13
+R18
+R19
+!i113 1
+R7
+R8
+n@p@w@m3
+vRemoteComm_e
+R0
+R10
+!i10b 1
+!s100 [TVb_T_GW:;dcZO?@oz8?3
+R2
+Iz0]L3HgaI@Lk7PEiN0V`I3
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/RemoteComm.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/RemoteComm.sv
+!i122 68
+L0 3 100
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/RemoteComm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/RemoteComm.sv|
+!i113 1
+R7
+R8
+n@remote@comm_e
+vrst_synch
+R0
+R10
+!i10b 1
+!s100 >9d?:Ye=<551AOfUB[4Aj1
+R2
+I@NNaRHhj80_BVS^;gGh]A0
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/reset_synch.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/reset_synch.sv
+!i122 69
+L0 1 21
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/reset_synch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/reset_synch.sv|
+!i113 1
+R7
+R8
+vSPI_iNEMO4
+R0
+R10
+!i10b 1
+!s100 igVcUhSibTbS98f?^85:Y1
+R2
+IZfF=@7BUXeNWME3j4_Wo=1
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/SPI_iNEMO4.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/SPI_iNEMO4.sv
+!i122 70
+L0 2 196
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/SPI_iNEMO4.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/SPI_iNEMO4.sv|
+!i113 1
+R7
+R8
+n@s@p@i_i@n@e@m@o4
+vSPI_mnrch
+R0
+R10
+!i10b 1
+!s100 OS?ECBmdNnok>T46<>Ca20
+R2
+IoZgW?W;a0f;NOfe<L_eOY2
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/SPI_mnrch.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/SPI_mnrch.sv
+!i122 71
+L0 1 114
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/SPI_mnrch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/SPI_mnrch.sv|
+!i113 1
+R7
+R8
+n@s@p@i_mnrch
+vsponge
+R0
+R10
+!i10b 1
+!s100 VgVkUIojo4b6?;]`cCza50
+R2
+I4DScC<;TjZ^WRAAm8FOBH0
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/sponge.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/sponge.sv
+!i122 72
+L0 1 190
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/sponge.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/sponge.sv|
+!i113 1
+R7
+R8
+vTourCmd
+R0
+R10
+!i10b 1
+!s100 HJi;9_j:`gUe;[egdI`l32
+R2
+IkKUOee1O=[?S>b=:<E`0Z1
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/TourCmd.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/TourCmd.sv
+!i122 73
+L0 1 128
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/TourCmd.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/TourCmd.sv|
+!i113 1
+R7
+R8
+n@tour@cmd
+vTourLogic
+R0
+Z24 !s110 1733714643
+!i10b 1
+!s100 a`09e9kShjhQW:]`6mNU21
+R2
+IBmoXPaIo0DbbfHkDJH4f=2
+R3
+S1
+R4
+w1733714300
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/TourLogic.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/TourLogic.sv
+!i122 74
+L0 2 375
+R5
+r1
+!s85 0
+31
+Z25 !s108 1733714643.000000
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/TourLogic.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/TourLogic.sv|
+!i113 1
+R7
+R8
+n@tour@logic
+vTourLogic_tb
+R0
+R24
+!i10b 1
+!s100 7CI2eMkC[;o:WIg@Z50fj0
+R2
+ICnmRfdcfn:]Nz3HE?V>_d0
+R3
+S1
+R4
+w1733714338
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/test/TourLogic_tb.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/test/TourLogic_tb.sv
+!i122 79
+L0 1 61
+R5
+r1
+!s85 0
+31
+R25
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/test/TourLogic_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/test/TourLogic_tb.sv|
+!i113 1
+R7
+R8
+n@tour@logic_tb
+vUART
+R24
+!i10b 1
+!s100 ozZMQQY>8LzjOeP^z:;;L3
+R2
+IWKJD4KPYiUVYhlm6WfWin3
+R3
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART.v
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART.v
+!i122 75
+L0 1 24
+R5
+r1
+!s85 0
+31
+R25
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART.v|
+!i113 1
+o-work work
+R8
+n@u@a@r@t
+vUART_rx
+R0
+R24
+!i10b 1
+!s100 CmZ0@OC_g?ZgET6n^HQC21
+R2
+IN9gHmRK6ZQ<?gCc=@RI3d3
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_rx.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_rx.sv
+!i122 76
+Z26 L0 1 107
+R5
+r1
+!s85 0
+31
+R25
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_rx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_rx.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_rx
+vUART_tx
+R0
+R24
+!i10b 1
+!s100 ]LWTMc;^NC[=M4LIJ3]Qa3
+R2
+IY_YCJ9YliZ18GL^h=6XcU2
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_tx.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_tx.sv
+!i122 77
+L0 1 97
+R5
+r1
+!s85 0
+31
+R25
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_tx.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_tx
+vUART_wrapper
+R0
+R24
+!i10b 1
+!s100 hdge>nlFzPA]6VV[5Ei3R3
+R2
+IRPz8G6^MIOafMnghLb6Mj1
+R3
+S1
+R4
+R9
+8/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_wrapper.sv
+F/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_wrapper.sv
+!i122 78
+R26
+R5
+r1
+!s85 0
+31
+R25
+!s107 /home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/juyoungoh/University/2024Fall/ece551/Knights_Tour/hdl/UART_wrapper.sv|
+!i113 1
+R7
+R8
+n@u@a@r@t_wrapper

@@ -1,0 +1,36 @@
+# Loading project Knights_Tour
+# reading /home/juyoungoh/JuyoungOh/sdk/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project hw02
+# Compile of addsub_4bit_tb.sv was successful.
+# Compile of ALU_tb.sv was successful.
+# Compile of hw02.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.addsub_4bit_tb
+# vsim work.addsub_4bit_tb 
+# Start time: 23:28:29 on Feb 11,2025
+# Loading sv_std.std
+# Loading work.addsub_4bit_tb
+# Loading work.addsub_4bit
+# Loading work.full_adder_1bit
+run -all
+# Starting testbench...
+# Test failed for A=  4, B=  1, sub=1: expected   3, got  x
+# ** Note: $finish    : /home/juyoungoh/University/2025Spring/ece552/hw/hw02/addsub_4bit_tb.sv(23)
+#    Time: 1 ps  Iteration: 0  Instance: /addsub_4bit_tb
+# 1
+# Break in Module addsub_4bit_tb at /home/juyoungoh/University/2025Spring/ece552/hw/hw02/addsub_4bit_tb.sv line 23
+add wave -position insertpoint sim:/addsub_4bit_tb/iDUT/*
+restar
+# ambiguous command name "restar": restart restartCmd restartDone restartError restartParse
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# Starting testbench...
+# Test failed for A=  4, B=  1, sub=1: expected   3, got  x
+# ** Note: $finish    : /home/juyoungoh/University/2025Spring/ece552/hw/hw02/addsub_4bit_tb.sv(23)
+#    Time: 1 ps  Iteration: 0  Instance: /addsub_4bit_tb
+# 1
+# Break in Module addsub_4bit_tb at /home/juyoungoh/University/2025Spring/ece552/hw/hw02/addsub_4bit_tb.sv line 23
+# Break key hit
+# End time: 23:30:00 on Feb 11,2025, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 1
